@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_frag"
+    app:startDestination="@id/perfilFragment">
+    <fragment
+        android:id="@+id/randomFragment"
+        android:name="com.example.proyectofinal.RandomFragment"
+        android:label="fragment_random"
+        tools:layout="@layout/fragment_random" />
+    <fragment
+        android:id="@+id/carrito"
+        android:name="com.example.proyectofinal.Carrito"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
+    <fragment
+        android:id="@+id/buscarFragment"
+        android:name="com.example.proyectofinal.BuscarFragment"
+        android:label="fragment_buscar"
+        tools:layout="@layout/fragment_buscar" >
+        <action
+            android:id="@+id/action_buscarFragment_to_detallesBusquedaFragment"
+            app:destination="@id/detallesBusquedaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.proyectofinal.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil">
+        <action
+            android:id="@+id/action_perfilFragment_to_carrito"
+            app:destination="@id/carrito" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallesBusquedaFragment"
+        android:name="com.example.proyectofinal.DetallesBusquedaFragment"
+        android:label="fragment_detalles_busqueda"
+        tools:layout="@layout/fragment_detalles_busqueda" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>

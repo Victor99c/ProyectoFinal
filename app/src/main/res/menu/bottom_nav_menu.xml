@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/perfilFragment"
+        android:title="Perfil"
+        android:icon="@drawable/perfil"
+        />
+    <item
+        android:id="@+id/randomFragment"
+        android:icon="@drawable/random"
+        android:title="Sugerencias"
+        />
+    <item
+        android:id="@+id/buscarFragment"
+        android:icon="@drawable/buscar"
+        android:title="Buscar"
+        />
+
+</menu>

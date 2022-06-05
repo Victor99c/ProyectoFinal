@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarFragment">
+
+
+
+
+
+    <Button
+        android:id="@+id/busca"
+        android:layout_width="57dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/busca"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/busqueda"
+        android:layout_width="216dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintRight_toLeftOf="@id/busca"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NomProduct"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="88dp"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/busca" />
+
+    <TextView
+        android:id="@+id/Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/Descripcion" />
+
+    <TextView
+        android:id="@+id/Descripcion"
+        android:layout_width="98dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        app:layout_constraintLeft_toRightOf="@id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/NomProduct" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/busqueda"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/detalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="24dp"
+        android:text="Detalles"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
