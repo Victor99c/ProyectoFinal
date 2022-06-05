@@ -8,7 +8,11 @@
         android:id="@+id/randomFragment"
         android:name="com.example.proyectofinal.RandomFragment"
         android:label="fragment_random"
-        tools:layout="@layout/fragment_random" />
+        tools:layout="@layout/fragment_random" >
+        <action
+            android:id="@+id/action_randomFragment_to_detallesBusquedaFragment"
+            app:destination="@id/detallesBusquedaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/carrito"
         android:name="com.example.proyectofinal.Carrito"
